@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReconCG | Interactive Recon Command Generator</title>
-
-    <link rel="stylesheet" href="assets/css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>ReconCG</title>
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<nav>
+<div class="logo">ReconCG</div>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#generator">Generator</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="https://github.com/ammsec/ReconCG" target="_blank">GitHub</a></li>
+</ul>
+</nav>
 
-<header>
-    <h1>ReconCG</h1>
-    <p>Interactive Recon Command Generator for Security Professionals</p>
+<header class="hero" id="home">
+<h1>Interactive Recon Command Generator</h1>
+<p>Create reconnaissance commands in seconds.</p>
+<button onclick="document.getElementById('generator').scrollIntoView()">Get Started</button>
 </header>
 
-<main>
-
-<section class="hero">
-
-<h2>Generate Recon Commands Instantly</h2>
-
-<p>
-Create reconnaissance commands for your security testing workflow with an easy-to-use interface.
-</p>
-
-<button>Get Started</button>
-
+<section class="generator" id="generator">
+<h2>Nmap Command Generator</h2>
+<input type="text" id="target" placeholder="example.com">
+<div class="options">
+<label><input id="syn" type="checkbox"> SYN (-sS)</label>
+<label><input id="service" type="checkbox"> Service (-sV)</label>
+<label><input id="os" type="checkbox"> OS (-O)</label>
+<label><input id="aggressive" type="checkbox"> Aggressive (-A)</label>
+<label><input id="verbose" type="checkbox"> Verbose (-v)</label>
+<label><input id="pn" type="checkbox"> -Pn</label>
+</div>
+<button onclick="generateCommand()">Generate Command</button>
+<button onclick="copyCommand()">Copy</button>
+<button onclick="resetForm()">Reset</button>
+<textarea id="output" readonly></textarea>
 </section>
 
-<section class="tools">
-
+<section class="cards" id="tools">
 <div class="card">Nmap</div>
 <div class="card">Subfinder</div>
 <div class="card">httpx</div>
 <div class="card">ffuf</div>
 <div class="card">Gobuster</div>
-<div class="card">Nuclei</div>
 <div class="card">Katana</div>
+<div class="card">Nuclei</div>
 <div class="card">Amass</div>
-
 </section>
 
-</main>
-
+<footer><p>Built by ammsec</p></footer>
 <script src="assets/js/script.js"></script>
-
 </body>
 </html>
