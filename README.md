@@ -97,3 +97,10 @@ Several tools in this list (SQLMap, Commix, Nuclei, WPScan, etc.) are intrusive 
 ## License
 
 See [LICENSE](LICENSE).
+
+
+## 🎥 Demo
+
+A short demonstration of ReconCG is available in the repository.
+
+- `docs/demo.mp4`
