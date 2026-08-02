@@ -1,5 +1,9 @@
 # ReconCG v5.0
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge)](https://ammsec.github.io/ReconCG/)
+[![Release](https://img.shields.io/github/v/release/ammsec/ReconCG?style=for-the-badge)](https://github.com/ammsec/ReconCG/releases)
+[![License](https://img.shields.io/github/license/ammsec/ReconCG?style=for-the-badge)](LICENSE)
+
 **Interactive Recon Command Generator** — build reconnaissance and security-testing commands in seconds, no more memorizing flags.
 
 Built with ❤️ by [**ammsec**](https://github.com/ammsec)
