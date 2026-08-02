@@ -93,3 +93,108 @@ nav ul{flex-wrap:wrap;justify-content:center}
 .hero h1{font-size:36px}
 .hero p{font-size:17px}
 }
+.dashboard{
+width:90%;
+margin:60px auto;
+display:flex;
+gap:30px;
+}
+
+
+.sidebar{
+width:220px;
+background:#161b22;
+padding:20px;
+border-radius:12px;
+}
+
+
+.sidebar h3{
+color:#58a6ff;
+margin-bottom:20px;
+}
+
+
+.tool-btn{
+
+width:100%;
+margin-bottom:10px;
+padding:12px;
+
+background:#238636;
+color:white;
+
+border:none;
+border-radius:6px;
+
+cursor:pointer;
+
+}
+
+
+.tool-btn:hover,
+.tool-btn.active{
+
+background:#58a6ff;
+
+}
+
+
+
+.generator-panel{
+
+flex:1;
+
+background:#161b22;
+
+padding:30px;
+
+border-radius:12px;
+
+}
+
+
+.generator-panel input,
+.generator-panel select,
+.generator-panel textarea{
+
+width:100%;
+margin:10px 0;
+padding:12px;
+
+background:#0d1117;
+color:white;
+
+border:1px solid #30363d;
+
+border-radius:6px;
+
+}
+
+
+.options{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+
+}
+
+
+.generator-panel button{
+
+padding:10px 20px;
+
+margin:5px;
+
+background:#238636;
+
+border:none;
+
+color:white;
+
+border-radius:6px;
+
+cursor:pointer;
+
+}
