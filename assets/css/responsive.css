@@ -1,0 +1,72 @@
+/* =========================================
+   ReconCG v5.0
+   responsive.css — Breakpoints
+   ========================================= */
+
+/* Tablet */
+@media (max-width: 1080px) {
+  .dashboard {
+    grid-template-columns: 220px 1fr;
+  }
+  .history-panel {
+    grid-column: 1 / -1;
+    position: static;
+    max-height: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+  nav {
+    padding: 14px 16px;
+  }
+  nav ul {
+    gap: 14px;
+  }
+  nav ul li a {
+    font-size: 0.82rem;
+  }
+
+  .hero {
+    padding: 64px 16px 48px;
+  }
+
+  .dashboard {
+    grid-template-columns: 1fr;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .sidebar {
+    position: static;
+    max-height: none;
+  }
+
+  .category-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  }
+
+  .generator-panel {
+    padding: 18px;
+  }
+
+  .options {
+    grid-template-columns: 1fr;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .history-panel {
+    position: static;
+  }
+}
+
+/* Small phones */
+@media (max-width: 420px) {
+  .hero h1 { font-size: 1.5rem; }
+  nav .logo { font-size: 1rem; }
+  nav ul { gap: 10px; }
+}
